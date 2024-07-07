@@ -9,6 +9,9 @@ const fs = require('fs');
 const app = express();
 
 app.use(express.static('front2'));
+app.get("*",(req,res)=>{
+    res.sendFile(path.resolve(__dirname,"front2","index.html"))
+})
 // // SSL/TLS certificate and key
 // const sslKey = fs.readFileSync('ssl-key.pem');
 // const sslCert = fs.readFileSync('ssl-cert.pem');
