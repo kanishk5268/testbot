@@ -6,7 +6,7 @@ const chatbotCloseBtn = document.querySelector(".close-btn");
 let messageHistory = [];
 let userMessage;
 let incomingChatLi;
-// const API_KEY = "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";
+
 const ws = new WebSocket('ws://localhost:3000'); // WebSocket connection
 const inputInitHeight = chatInput.scrollHeight;
 
